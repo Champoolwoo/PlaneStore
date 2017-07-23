@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<title>3 Ya Flying Club</title>
+	<!--<link rel="stylesheet" href="css/style.scss">-->
+
+  <!-- frame Bulma-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.3/css/bulma.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- framework Angular -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <!--เรียกไฟล์ app.js-->
+	<script src="../js/app.js"></script>
+  <script src="../js/burger.js"></script>
+
+</head>
+<script>
+</script>
+<body ng-controller="PlaneController">
+  
+  <!--//////////////////// navbar ////////////////////-->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../index.html">3 Ya Flying Club.<i class="fa fa-plane" aria-hidden="true"></i></a>
+      <div class="navbar-burger burger" data-target="navMenuExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div><!-- navbar-burger burger -->
+    </div><!-- navbar-brand -->
+
+    <div id="navMenuExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item " href="../index.html">หน้าแรก</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link  is-active" href="/page/helicopter.html">เลือกสินค้า</a>
+          <div class="navbar-dropdown ">
+            <a class="navbar-item " href="#">เครื่องบินบังคับ</a>
+            <a class="navbar-item " href="helicopter.html">เฮริคอปเตอร์บังคับ</a>
+            <a class="navbar-item " href="#">โดรนบังคับ</a>
+          </div><!-- navbar-dropdown -->
+        </div><!-- navbar-item has-dropdown -->
+        <a class="navbar-item " href="#">ติดต่อเรา</a>
+        <a class="navbar-item " href="#">วิธีการชำระเงิน</a>
+      </div><!-- navbar-start -->
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="field is-grouped">
+            <p class="control">
+              <a id="facebook" class="button is-info is-outlined is-fullwidth"
+                href="https://www.facebook.com/chumpol.kamjumpol">
+                <span class="icon">
+                  <i class="fa fa-facebook"></i>
+                </span>
+                <span>Facebook</span>
+              </a>
+            </p>
+          </div><!-- field is-grouped -->
+        </div><!-- navbar-item -->
+      </div><!-- navbar-end -->
+    </div><!-- navbar-menu -->
+
+  </nav>
+  <!--//////////////////// navbar ////////////////////-->
+
+  <!--//////////////////// tab ////////////////////-->
+  <div class="tabs is-small is-centered">
+    <ul>
+        <li><a>เครื่องบินบังคับ</a></li>
+        <li><a href="helicopter.html">เฮริคอปเตอร์บังคับ</a></li>
+        <li class="is-active"><a>โดรนบังคับ</a></li>
+    </ul>
+  </div>
+    <!--//////////////////// tab ////////////////////-->
+
+  <!--//////////////////// สินค้า ////////////////////-->
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">รายการสินค้า</h1>
+      <h2 class="subtitle"></h2>
+    <div class="columns">
+      <div class="column is-8">
+
+      <div class="box" ng-repeat="show in product" ng-if="show.type === 'Drone'">
+        <article class="media">
+          <div class="media-left">
+            <figure class="image is-128x128">
+              <img ng-src="{{show.pic}}" alt="Image">
+            </figure>
+          </div><!-- media-left -->
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>{{show.id}}</strong>
+                <strong>{{show.type}}</strong> <small>{{show.name}}</small>
+                <br>
+                ราคา : {{show.price}}
+              </p>
+            </div><!-- media-content -->
+            <nav class="level is-mobile">
+              <div class="level-left">
+                
+              </div><!-- level-left -->
+            </nav><!-- level is-mobile -->
+            <a class="button is-success is-outlined" ng-click="addlist(show)">ใส่ตะกร้า</a>
+            <a class="button is-info is-outlined">ลายละเอียด</a>
+          </div>
+        </article><!-- media -->
+      </div><!-- box -->
+      </div><!-- column -->
+
+      <div class="column is-4">
+        <nav class="panel">
+          <p class="panel-heading">
+            รายการที่เลือก
+          </p>
+          
+          <a class="panel-block is-active" ng-repeat="sel in list">
+            <span class="panel-icon">
+              <i class="fa fa-plane"></i>
+            </span>
+            ชื่อรายการ : {{sel.name}}<br>
+            จำนวน : {{sel.amount}} ราคา : {{sel.price}}
+          </a>
+
+          <a class="panel-block is-active">
+            <span class="panel-icon">
+              <i class="fa fa-book"></i>
+            </span>
+            จำนวนเงินที่ต้องชำระ : {{sum}}
+          </a>
+          <div class="panel-block">
+            <button class="button is-primary is-outlined is-fullwidth">
+              สั่งซื้อ
+            </button>
+            <button class="button is-danger is-outlined is-fullwidth">
+              แก้ไข
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div><!-- columns -->
+   
+    </div><!-- container -->
+  </section>
+  
+  <!--//////////////////// สินค้า ////////////////////-->
+
+</body>
+</html>
