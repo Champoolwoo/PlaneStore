@@ -4,112 +4,112 @@ angular.module('app', [])
 	$scope.product = [
 		{
       id: 'D001',
-      pic: '../picture/drone/D001.jpg',
+      pic: '../picture/Drone/D001.jpg',
       name: 'โดรนบังคับ',
       type: 'Drone',
       price: 2500,
       amount: 1
     },{
       id: 'D002',
-      pic: '../picture/drone/D002.jpg',
+      pic: '../picture/Drone/D002.jpg',
       name: 'โครนบังคับ',
       type: 'Drone',
       price: 50000,
       amount: 1
     },{
       id: 'D003',
-      pic: '../picture/drone/D003.jpg',
+      pic: '../picture/Drone/D003.jpg',
       name: 'โครนบังคับ',
       type: 'Drone',
       price: 4500,
       amount: 1
     },{
       id: 'D004',
-      pic: '../picture/drone/D004.jpg',
+      pic: '../picture/Drone/D004.jpg',
       name: 'โครนบังคับ',
       type: 'Drone',
       price: 5500,
       amount: 1
     },{
       id: 'D005',
-      pic: '../picture/drone/D005.jpg',
+      pic: '../picture/Drone/D005.jpg',
       name: 'โครนบังคับ',
       type: 'Drone',
       price: 6500,
       amount: 1
     },{
       id: 'D006',
-      pic: '../picture/drone/D006.jpg',
+      pic: '../picture/Drone/D006.jpg',
       name: 'โครนบังคับ',
       type: 'Drone',
       price: 7500,
       amount: 1
     },{
       id: 'D007',
-      pic: '../picture/drone/D007.jpg',
+      pic: '../picture/Drone/D007.jpg',
       name: 'โครนบังคับ',
       type: 'Drone',
       price: 8500,
       amount: 1
     },{
       id: 'D008',
-      pic: '../picture/drone/D008.jpg',
+      pic: '../picture/Drone/D008.jpg',
       name: 'โครนบังคับ',
       type: 'Drone',
       price: 8500,
       amount: 1
     },{
       id: 'D009',
-      pic: '../picture/drone/D009.jpg',
+      pic: '../picture/Drone/D009.jpg',
       name: 'โครนบังคับ',
       type: 'Drone',
       price: 8500,
       amount: 1
     },{
       id: 'D010',
-      pic: '../picture/drone/D010.jpg',
+      pic: '../picture/Drone/D010.jpg',
       name: 'โครนบังคับ',
       type: 'Drone',
       price: 8500,
       amount: 1
     },{
       id: 'D011',
-      pic: '../picture/drone/D011.jpg',
+      pic: '../picture/Drone/D011.jpg',
       name: 'โครนบังคับ',
       type: 'Drone',
       price: 8500,
       amount: 1
     },{
       id: 'H001',
-      pic: '../picture/helicopter/H001.jpg',
+      pic: '../picture/Helicopter/H001.jpg',
       name: 'โครนบังคับ',
       type: 'Helicopter',
       price: 8500,
       amount: 1
     },{
       id: 'H002',
-      pic: '../picture/helicopter/H002.jpg',
+      pic: '../picture/Helicopter/H002.jpg',
       name: 'โครนบังคับ',
       type: 'Helicopter',
       price: 8500,
       amount: 1
     },{
       id: 'H003',
-      pic: '../picture/helicopter/H003.jpg',
+      pic: '../picture/Helicopter/H003.jpg',
       name: 'โครนบังคับ',
       type: 'Helicopter',
       price: 8500,
       amount: 1
     },{
       id: 'H004',
-      pic: '../picture/helicopter/H004.jpg',
+      pic: '../picture/Helicopter/H004.jpg',
       name: 'โครนบังคับ',
       type: 'Helicopter',
       price: 8500,
       amount: 1
     },{
       id: 'H005',
-      pic: '../picture/helicopter/H005.jpg',
+      pic: '../picture/Helicopter/H005.jpg',
       name: 'โครนบังคับ',
       type: 'Helicopter',
       price: 8500,
