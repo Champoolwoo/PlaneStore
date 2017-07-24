@@ -36,14 +36,7 @@
     <div id="navMenuExample" class="navbar-menu">
       <div class="navbar-start">
         <a class="navbar-item " href="#">หน้าแรก</a>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link  is-active" href="/page/helicopter.html">เลือกสินค้า</a>
-          <div class="navbar-dropdown ">
-            <a class="navbar-item " href="#">เครื่องบินบังคับ</a>
-            <a class="navbar-item " href="/page/helicopter.html">เฮริคอปเตอร์บังคับ</a>
-            <a class="navbar-item " href="/page/drone.html">โดรนบังคับ</a>
-          </div><!-- navbar-dropdown -->
-        </div><!-- navbar-item has-dropdown -->
+        <a class="navbar-item " href="/page/product.html">เลือกสินค้า</a>
         <a class="navbar-item " href="#">ติดต่อเรา</a>
         <a class="navbar-item " href="#">วิธีการชำระเงิน</a>
       </div><!-- navbar-start -->
@@ -57,6 +50,15 @@
                   <i class="fa fa-facebook"></i>
                 </span>
                 <span>Facebook</span>
+              </a>
+            </p>
+            <p class="control">
+              <a class="button is-primary is-outlined is-fullwidth"
+                href="https://www.facebook.com/chumpol.kamjumpol">
+                <span class="icon">
+                  <i class="fa fa-lock"></i>
+                </span>
+                <span>Sing in</span>
               </a>
             </p>
           </div><!-- field is-grouped -->
@@ -83,76 +85,6 @@
   <!--//////////////////// หัว ////////////////////-->
 
   <!--//////////////////// สินค้า ////////////////////-->
-
-  <section class="section">
-    <div class="container">
-      <h1 class="title">รายการสินค้า</h1>
-      <h2 class="subtitle"></h2>
-    <div class="columns">
-      <div class="column is-8">
-
-      <div class="box" ng-repeat="show in product">
-        <article class="media">
-          <div class="media-left">
-            <figure class="image is-128x128">
-              <img ng-src="{{show.pic}}" alt="Image">
-            </figure>
-          </div><!-- media-left -->
-          <div class="media-content">
-            <div class="content">
-              <p>
-                <strong>{{show.id}}</strong>
-                <strong>{{show.type}}</strong> <small>{{show.name}}</small>
-                <br>
-                ราคา : {{show.price}}
-              </p>
-            </div><!-- media-content -->
-            <nav class="level is-mobile">
-              <div class="level-left">
-                
-              </div><!-- level-left -->
-            </nav><!-- level is-mobile -->
-            <a class="button is-success is-outlined" ng-click="addlist(show)">ใส่ตะกร้า</a>
-            <a class="button is-info is-outlined">ลายละเอียด</a>
-          </div>
-        </article><!-- media -->
-      </div><!-- box -->
-      </div><!-- column -->
-
-      <div class="column is-4">
-        <nav class="panel">
-          <p class="panel-heading">
-            รายการที่เลือก
-          </p>
-          
-          <a class="panel-block is-active" ng-repeat="sel in list">
-            <span class="panel-icon">
-              <i class="fa fa-plane"></i>
-            </span>
-            ชื่อรายการ : {{sel.name}}<br>
-            จำนวน : {{sel.amount}} ราคา : {{sel.price}}
-          </a>
-
-          <a class="panel-block is-active">
-            <span class="panel-icon">
-              <i class="fa fa-book"></i>
-            </span>
-            จำนวนเงินที่ต้องชำระ : {{sum}}
-          </a>
-          <div class="panel-block">
-            <button class="button is-primary is-outlined is-fullwidth">
-              สั่งซื้อ
-            </button>
-            <button class="button is-danger is-outlined is-fullwidth">
-              แก้ไข
-            </button>
-          </div>
-        </nav>
-      </div>
-    </div><!-- columns -->
-   
-    </div><!-- container -->
-  </section>
   
   <!--//////////////////// สินค้า ////////////////////-->
 
