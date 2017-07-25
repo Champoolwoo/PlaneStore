@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Champoolwoo/planestore/issues"
   },
-  "homepage": "https://github.com/Champoolwoo/planestore#readme"
+  "homepage": "https://github.com/Champoolwoo/planestore#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
 }
