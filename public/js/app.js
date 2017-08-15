@@ -180,5 +180,9 @@ angular.module('app', [])
       $scope.sum += $scope.sumamount
     }
   }
+
+  $scope.detailplane = function(show){
+    
+  }
   
 })//end
