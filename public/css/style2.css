@@ -1,0 +1,23 @@
+body {
+    /*font-family: 'Prompt', sans-serif;*/
+    /*font-style: normal;*/
+    position: relative; 
+    /*font-family: 'Kanit', sans-serif;*/
+    /*font-family: 'Athiti', sans-serif;*/
+}
+
+#section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+#section21 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+#section22 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+#section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+/*#section21 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}*/
+
+
+h1,h2,h3,h4,h5,h6,a,p,li{
+    position: relative;
+    font-family: 'Athiti', sans-serif;
+    /*font-family: 'Titillium Web', sans-serif;*/
+    font-style: normal;
+
+}
+
